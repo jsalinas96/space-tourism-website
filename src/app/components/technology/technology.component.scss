@@ -1,0 +1,180 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  background: var(--deep-blue)
+    url("/assets/technology/background-technology-desktop.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+
+  padding: 212px 0 0 12%;
+
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    b {
+      margin-right: 28px;
+      opacity: 0.25;
+    }
+  }
+
+  .landscape-image {
+    width: 100%;
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;
+
+    .space-launch {
+      display: flex;
+      align-items: flex-start;
+      height: 300px;
+
+      .btn-group {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .btn {
+          color: #fff;
+          font-size: 32px;
+          line-height: 37px;
+          letter-spacing: 2px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #ffffff;
+          cursor: pointer;
+        }
+        .btn:hover {
+          border: 1px solid #ffffff25;
+        }
+        .btn.selected {
+          background: #fff;
+          color: #0b0d17;
+        }
+      }
+
+      .text {
+        width: 470px;
+        margin: 0 80px;
+
+        h2 {
+          font-family: Barlow Condensed;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+          color: #d0d6f9;
+          text-transform: uppercase;
+          margin-bottom: 11px;
+        }
+        h1 {
+          font-family: Bellefair;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 56px;
+          line-height: 64px;
+          color: #ffffff;
+          text-transform: uppercase;
+          margin-bottom: 17px;
+        }
+        p {
+          font-family: Barlow;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 32px;
+          color: #d0d6f9;
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .main {
+    padding: 136px 0;
+
+    .title {
+      margin-left: 38px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .landscape-image {
+      display: flex;
+      justify-content: center;
+      padding: 60px 0;
+      img{
+        width: 100%;
+        max-height: 310px;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      padding: 0;
+
+      .space-launch {
+        flex-direction: column;
+        align-items: center;
+
+        .btn-group {
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-evenly;
+
+          .btn {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .text {
+          text-align: center;
+          padding-top: 44px;
+          margin: 0;
+
+          h2{
+            font-size: 16px;
+            line-height: 19px;
+          }
+          h1{
+            font-size: 40px;
+            line-height: 46px;
+          }
+          p{
+            font-size: 16px;
+            line-height: 28px;
+            padding-right: 0;
+          }
+        }
+      }
+
+      .portrait-image {
+        display: none;
+      }
+    }
+  }
+}

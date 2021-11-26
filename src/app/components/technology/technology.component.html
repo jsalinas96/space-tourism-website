@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="title"><b>03</b>space launch 101</div>
+    <div class="landscape-image">
+        <img [src]="imageLandscape" alt="">
+    </div>
+    <div class="content">
+        <div class="space-launch">
+            <div class="btn-group">
+                <div class="btn" id="1" (click)="changeContent($event)" [ngClass]="{'selected': option == '1'}">1</div>
+                <div class="btn" id="2" (click)="changeContent($event)" [ngClass]="{'selected': option == '2'}">2</div>
+                <div class="btn" id="3" (click)="changeContent($event)" [ngClass]="{'selected': option == '3'}">3</div>
+            </div>
+            <div class="text">
+                <h2>the terminology...</h2>
+                <h1>{{name}}</h1>
+                <p>{{description}}</p>
+            </div>
+        </div>
+        <div class="portrait-image">
+            <img [src]="imagePortrait" alt="">
+        </div>
+    </div>
+</div>
+
+<!--  -->

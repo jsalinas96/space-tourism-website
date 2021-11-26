@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="title"><b>01</b>pick your destination</div>
+    <div class="content" *ngFor="let item of filterByName">
+        <div class="dest-img">
+            <img [src]="item.images.png" alt="">
+        </div>
+        <div class="description-container">
+            <div class="destinations">
+                <div class="item" id="Moon" (click)="changeContent($event)" [ngClass]="{'selected': item.name == 'Moon'}">MOON</div>
+                <div class="item" id="Mars" (click)="changeContent($event)" [ngClass]="{'selected': item.name == 'Mars'}">MARS</div>
+                <div class="item" id="Europa" (click)="changeContent($event)" [ngClass]="{'selected': item.name == 'Europa'}">EUROPA</div>
+                <div class="item" id="Titan" (click)="changeContent($event)" [ngClass]="{'selected': item.name == 'Titan'}">TITAN</div>
+            </div>
+            <h1>{{item.name}}</h1>
+            <p>{{item.description}}</p>
+            <div></div>
+            <div class="info">
+                <div>
+                    <h3>avg. distance</h3>
+                    <h2>{{item.distance}}</h2>
+                </div>
+                <div>
+                    <h3>est. travel time</h3>
+                    <h2>{{item.travel}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

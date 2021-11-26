@@ -1,0 +1,170 @@
+.navbar {
+  max-width: calc(100% - 55px);
+  width: 100%;
+  height: 96px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 40px;
+  left: 55px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  .side-l {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+
+    span {
+      width: 35%;
+      height: 1px;
+      background: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      position: absolute;
+      z-index: 2;
+      left: 8%;
+    }
+  }
+  .side-r {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(80px);
+    display: flex;
+    align-items: center;
+
+    .menu {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: Barlow Condensed;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      color: #ffffff;
+      padding: 0 10%;
+
+      .item {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-bottom: solid 3px rgba(255, 255, 255, 0);
+        cursor: pointer;
+        b {
+          font-weight: 700;
+          margin-right: 15px;
+        }
+      }
+      .item:hover {
+        border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+      }
+      .item.selected {
+        border-bottom: solid 3px #fff;
+      }
+    }
+  }
+}
+
+.hamburger-btn {
+  display: none;
+  top: 33px;
+  right: 24px;
+  position: absolute;
+  z-index: 4;
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+}
+.open-btn {
+  background: url("/assets/shared/icon-hamburger.svg") no-repeat;
+}
+.close-btn {
+  background: url("/assets/shared/icon-close.svg") no-repeat;
+}
+.sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  z-index: 3;
+  padding-top: 118px;
+
+  .item {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0 32px 32px 32px;
+    b {
+      font-weight: 700;
+      margin-right: 15px;
+    }
+  }
+}
+
+/*SMALL-DESKTOP*/
+@media screen and (max-width: 1225px) {
+  .navbar {
+    grid-template-columns: 30% 70%;
+
+    .side-l {
+      span {
+        width: 25%;
+      }
+    }
+  }
+}
+
+/*TABLET*/
+@media screen and (max-width: 1175px) {
+  .navbar {
+    max-width: calc(100% - 40px);
+    top: 0;
+    left: 40px;
+    height: 80px;
+    .side-l {
+      span {
+        display: none;
+      }
+    }
+    .side-r {
+      .menu {
+        font-size: 40px;
+        padding: 0 48px;
+        font-size: 14px;
+        .item {
+          b {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+  .navbar {
+    left: 0;
+    padding: 24px;
+    .side-r {
+      display: none;
+    }
+  }
+  .hamburger-btn {
+      display: block;
+  }
+  .sidebar{
+      display: block;
+  }
+}

@@ -1,0 +1,152 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  background: var(--deep-blue) url("/assets/home/background-home-desktop.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 130px 12%;
+
+  .text-container {
+    width: 450px;
+    height: 382px;
+
+    h2 {
+      font-family: Barlow Condensed;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 34px;
+      /* identical to box height */
+      letter-spacing: 4.725px;
+      color: #d0d6f9;
+    }
+    h1 {
+      font-family: Bellefair;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 150px;
+      line-height: 172px;
+      color: #ffffff;
+      margin: 24px 0;
+    }
+    p {
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      /* or 178% */
+      color: #d0d6f9;
+    }
+  }
+
+  .btn {
+    width: 274px;
+    height: 274px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    h1 {
+      font-family: Bellefair;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 37px;
+      /* identical to box height */
+      letter-spacing: 2px;
+      color: #0b0d17;
+    }
+  }
+  .btn:hover {
+    outline: solid 88px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/*TABLET*/
+@media screen and (max-width: 1175px) {
+    .main {
+        background: url("/assets/home/background-home-tablet.jpg") no-repeat center
+          center fixed;
+        background-size: cover;
+        flex-direction: column;
+        padding: 180px 0;
+        padding-bottom: 75px;
+        align-items: center;
+
+        .text-container {
+            width: 420px;
+            text-align: center;
+            h2 {
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 3.375px;
+              }
+            h1 {
+                font-size: 125px;
+                line-height: 150px;
+                margin: 20px 0;
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        .btn {
+            width: 220px;
+            height: 220px; 
+        }
+        .btn:hover {
+            outline-width: 50px;
+          }
+      }
+}
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+  .main {
+    background: url("/assets/home/background-home-mobile.jpg") no-repeat center
+      center fixed;
+    background-size: cover;
+    padding: 150px 25px 85px 25px;
+
+    .text-container {
+        width: 100%;
+        h2 {
+            font-size: 22px;
+            line-height: 18px;
+            letter-spacing: 2.7px;
+        }
+        h1 {
+            font-size: 110px;
+            line-height: 100px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+    .btn {
+        width: 200px;
+        height: 200px;
+        h1{
+            font-size: 20px;
+            line-height: 23px;
+        }
+        
+    }
+    .btn:hover {
+        outline-width: 50px;
+      }
+  }
+  
+}

@@ -1,0 +1,178 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  background: var(--deep-blue) url("/assets/crew/background-crew-desktop.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+
+  .title {
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    position: absolute;
+    top: 212px;
+    left: 12%;
+
+    b {
+      margin-right: 28px;
+      opacity: 0.25;
+    }
+  }
+
+  .content{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 350px 12% 0 12%;
+
+    .crew{
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      justify-content: space-between;
+
+      .crew-info{
+        h2{
+          align-self: start;
+          font-family: Bellefair;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 37px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          opacity: 0.5;
+          margin-bottom: 15px;
+        }
+        h1{
+          align-self: start;
+          font-family: Bellefair;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 56px;
+          line-height: 64px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-bottom: 25px;
+        }
+        p{
+          align-self: start;
+          width: 440px;
+          font-family: Barlow;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 32px;
+          color: #D0D6F9;
+        }
+      }
+    }
+
+  }
+
+  .btn-container {
+    display: flex;
+
+    .radio-btn {
+      position: relative;
+      padding: 0 20px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: #fff;
+        opacity: 0.17;
+        border-radius: 50%;
+      }
+    }
+    .radio-btn:hover input ~ .checkmark {
+      background-color: #fff;
+      opacity: 0.5;
+    }
+    .radio-btn input:checked ~ .checkmark {
+      background-color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1175px) {
+  .main {
+    flex-direction: column;
+
+    .title {
+      top: 136px;
+      left: 38px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .content{
+      flex-direction: column;
+      align-items: center;
+      padding: 220px 0 0 0;
+
+      .crew{
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .crew-info{
+          
+          h2{
+            font-size: 24px;
+            line-height: 28px;
+          }
+          h1{
+            font-size: 40px;
+            line-height: 46px;
+          }
+          p{
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+
+        .btn-container{
+          margin-top: 40px;
+          align-self: center;
+
+          .checkmark {
+            height: 10px;
+            width: 10px;
+
+          }
+        }
+      }
+
+      img{
+        width: 400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+<div class="navbar">
+    <div class="side-l">
+        <img src="assets/shared/logo.svg" alt="">
+        <span></span>
+    </div>
+    <div class="side-r">
+        <div class="menu">
+            <div class="item" [routerLink]="['/home']" routerLinkActive="selected">
+                <b>00</b>HOME
+            </div>
+            <div class="item" [routerLink]="['/destination']" routerLinkActive="selected">
+                <b>01</b>DESTINATION
+            </div>
+            <div class="item" [routerLink]="['/crew']" routerLinkActive="selected">
+                <b>02</b>CREW
+            </div>
+            <div class="item" [routerLink]="['/technology']" routerLinkActive="selected">
+                <b>03</b>TECHNOLOGY
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="hamburger-btn open-btn" [ngClass]="{'close-btn': state}" (click)="burgerMenuClick()"></div>
+<div class="sidebar" *ngIf="state == true">
+    <div class="item" [routerLink]="['/home']">
+        <b>00</b>HOME
+    </div>
+    <div class="item" [routerLink]="['/destination']">
+        <b>01</b>DESTINATION
+    </div>
+    <div class="item" [routerLink]="['/crew']">
+        <b>02</b>CREW
+    </div>
+    <div class="item" [routerLink]="['/technology']">
+        <b>03</b>TECHNOLOGY
+    </div>
+</div>
+
+<router-outlet></router-outlet>

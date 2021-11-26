@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+:root{
+    --deep-blue: #0b0d17;
+    --light-purple: #D0D6F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    //font-family: 'Bellefair', serif;
+    //font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: 48px;
+    background: var(--deep-blue);
+}
