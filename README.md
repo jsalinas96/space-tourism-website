@@ -21,8 +21,12 @@ Los usuarios deben poder:
 ### Screenshots
 - Escritorio
 
+![Screenshot 2021-11-26 at 17-40-05 SpaceTourismWebsiteMain](https://user-images.githubusercontent.com/54508726/143635667-db4238fe-00b8-481b-a48c-f8d24af54cec.png)
+
 
 - Mobile
+
+![Screenshot 2021-11-26 at 17-40-49 SpaceTourismWebsiteMain](https://user-images.githubusercontent.com/54508726/143635738-fc38479e-5710-4560-90df-e358791c231e.png)
 
 
 ### Links
