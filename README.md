@@ -35,9 +35,9 @@ Los usuarios deben poder:
 
 ### Desarrollado con
 - [Angular](https://angular.io/)
-- HTML5
-- CSS custom properties
-- Flexbox
+- SCSS
+- Typescript
+- HTML
 
 ### Autor
 - Frontend Mentor - [@jsalinas96](https://www.frontendmentor.io/profile/jsalinas96)
